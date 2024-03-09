@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="select3.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css" rel="stylesheet"/>
+    
+    <title>select With livewire</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="runy-search-hotel-city col-lg-4 ">
+        <label class="form-label">Search cities</label>
+        <div class="text-secondary runy-value-input  fs-6 fw-semibold d-flex">
+            <input type="text" name="cityfilter" class="form-control form-control-solid text-runy-sormehei selected" placeholder="Search ..."/>
+            <input type="hidden" class="citiValue" name="cityfilterValue">
+
+        </div>
+
+        <div class="runy-menu-select">
+            <ul class="runy-select-item list-group">
+                <li value="Ankara" class="list-group-item fw-semibold fs-6 text-runy-narenji soValue ui-box left-inOutSpread">Ankara</li>
+                <li value="Dubai" class="list-group-item fw-semibold fs-6 text-runy-narenji soValue ui-box left-inOutSpread">Dubai</li>
+                <li value="Paris" class="list-group-item fw-semibold fs-6 text-runy-narenji soValue ui-box left-inOutSpread">Paris</li>
+
+            </ul>
+        </div>
+    </div>
+<script src="select3.js"></script>
+</body>
+</html>

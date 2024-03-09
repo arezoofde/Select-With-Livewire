@@ -1,0 +1,149 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    width:100%;
+    background-color:#c75151;
+}
+
+.bg-image {
+/* The image used */
+    background-image: url("photographer.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+   
+    height: 100%; 
+  }
+  .ui-box {
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: relative;
+    vertical-align: baseline;
+    padding: 10px;
+  }
+  .left-inOutSpread:before, .left-inOutSpread:after, .left-inOutSpread > .ui-border-element:before, .left-inOutSpread > .ui-border-element:after {
+    content: '';
+    position: absolute;
+  }
+  
+  .left-inOutSpread:before {
+    border-left: 2px solid #333;
+    top: 50%;
+    bottom: 50%;
+    left: 0px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  
+  .left-inOutSpread:hover:before {
+    top: 0%;
+    bottom: 0%;
+  }
+  
+  .left-inOutSpread:not(:hover):before {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .runy-search-hotel-city {
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  } 
+.runy-SearchBar-MainDiv {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #efefef;
+    border-radius: 14px;
+}
+
+.runy-var {
+    display: none;
+}
+
+.btn-runy-search {
+    background-color: var(--orange-color);
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 5%;
+    padding-block: 2%;
+}
+
+.runy-value-input {
+    border: 0;
+    width: 100%;
+    background: transparent;
+}
+
+.runy-menu-select {
+    max-height: 210px;
+    background-color: #FFFFFF;
+    padding: 0 2%;
+    border-radius: 5px;
+    margin-top: 0;
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+    transform: translateY(0.5rem);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 37%;
+    width: 34%;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.runy-select-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.soValue {
+    display: flex;
+    flex-direction: row;
+}
+
+.soValue:hover {
+    background-color: #ececec;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.selected{
+    width:50%;
+    padding:1%;
+}
